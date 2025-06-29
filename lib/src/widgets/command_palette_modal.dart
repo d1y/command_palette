@@ -116,6 +116,10 @@ class CommandPaletteModal extends ModalRoute<void> {
                           const _UpArrowIntent(),
                       const SingleActivator(LogicalKeyboardKey.enter):
                           const _EnterIntent(),
+                      const SingleActivator(LogicalKeyboardKey.keyN,
+                          control: true): const _DownArrowIntent(),
+                      const SingleActivator(LogicalKeyboardKey.keyP,
+                          control: true): const _UpArrowIntent(),
                       closeKeySet: const _CloseIntent(),
                     },
                     child: Actions(
